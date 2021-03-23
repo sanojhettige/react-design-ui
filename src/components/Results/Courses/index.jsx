@@ -19,7 +19,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 2,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -32,7 +32,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 3,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -45,7 +45,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 4,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -58,7 +58,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 5,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -71,7 +71,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 6,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -84,7 +84,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 7,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -97,7 +97,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 8,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -110,7 +110,7 @@ const COURSES = [
     courseCategory: "Licenciatura",
   },
   {
-    id: 1,
+    id: 9,
     name: "Grado en Administración y Dirección de Empresas",
     cover: "https://picsum.photos/600/500/?random",
     logo: "/images/uni-logo-2.png",
@@ -129,10 +129,10 @@ const onFallback = "Loading...";
 export default function Courses() {
   return (
     <CourseContainer>
-      <Suspense key="blog-page" fallback={onFallback}>
+      <Suspense key="courses-page" fallback={onFallback}>
         <Row justifyContent="center">
           {COURSES.map((course) => (
-            <CourseCard key={course.id} size={3} {...course} />
+            <CourseCard key={course.id} size={4} {...course} />
           ))}
         </Row>
       </Suspense>

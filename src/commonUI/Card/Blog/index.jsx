@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Col } from "common-ui/Grid";
+import Flex from 'common-ui/Flex';
 
 import { Post } from "./styles";
 import { Card } from "../styles";
 
 const BlogPost = ({ name, summary, size, cover }) => {
+  const width = 100/size;
   return (
-    <Col lg={size}>
+    <Flex width={`${width}%`} minWidth="300px" maxWidth="50%">
       <Post>
         <Card>
           <div className="card-container">
@@ -21,7 +22,7 @@ const BlogPost = ({ name, summary, size, cover }) => {
           </div>
         </Card>
       </Post>
-    </Col>
+    </Flex>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Col } from "common-ui/Grid";
+import Flex from 'common-ui/Flex';
 import LikeButton from "common-ui/Button/LikeButton";
 import FavoriteButton from "common-ui/Button/FavoriteButton";
 
@@ -21,8 +21,9 @@ const CourseCard = ({
   period,
   courseType,
 }) => {
+  const width = 100/size;
   return (
-    <Col lg={size}>
+    <Flex width={`${width}%`} minWidth="300px" maxWidth="50%">
       <Post>
         <Card>
           <div className="card-container">
@@ -74,7 +75,7 @@ const CourseCard = ({
           </div>
         </Card>
       </Post>
-    </Col>
+    </Flex>
   );
 };
 

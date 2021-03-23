@@ -61,7 +61,7 @@ export default function Destinations() {
         />
         <Row justifyContent="center">
           {DESTINATIONS.map((destination) => (
-            <DestinationCard key={destination.id} size={3} {...destination} />
+            <DestinationCard key={destination.id} size={4} {...destination} />
           ))}
         </Row>
       </Suspense>

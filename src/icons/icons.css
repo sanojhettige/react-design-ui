@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.eot?34beb1057cff2cd7072f678e6f1fea73#iefix") format("embedded-opentype"),
-url("./icons.woff2?34beb1057cff2cd7072f678e6f1fea73") format("woff2"),
-url("./icons.woff?34beb1057cff2cd7072f678e6f1fea73") format("woff");
+    src: url("./icons.eot?378221bfe239b9996a83eecc2de1ba76#iefix") format("embedded-opentype"),
+url("./icons.woff2?378221bfe239b9996a83eecc2de1ba76") format("woff2"),
+url("./icons.woff?378221bfe239b9996a83eecc2de1ba76") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -25,30 +25,36 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-bars:before {
     content: "\f103";
 }
-.icon-close:before {
+.icon-circle:before {
     content: "\f104";
 }
-.icon-config:before {
+.icon-close:before {
     content: "\f105";
 }
-.icon-down-arrow:before {
+.icon-config:before {
     content: "\f106";
 }
-.icon-filter:before {
+.icon-down-arrow:before {
     content: "\f107";
 }
-.icon-headset_mic:before {
+.icon-filter:before {
     content: "\f108";
 }
-.icon-heart:before {
+.icon-headset_mic:before {
     content: "\f109";
 }
-.icon-preferences:before {
+.icon-heart:before {
     content: "\f10a";
 }
-.icon-search:before {
+.icon-info:before {
     content: "\f10b";
 }
-.icon-user:before {
+.icon-preferences:before {
     content: "\f10c";
+}
+.icon-search:before {
+    content: "\f10d";
+}
+.icon-user:before {
+    content: "\f10e";
 }

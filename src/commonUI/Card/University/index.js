@@ -1,16 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Col } from "common-ui/Grid";
 import LikeButton from "common-ui/Button/LikeButton";
+import Flex from 'common-ui/Flex';
 
-import { Post } from "./styles";
+import { University } from "./styles";
 import { Card } from "../styles";
 
-const UniversityCard = ({ name, programCount, size, cover, logo }) => {
+
+const UniversityCard = ({ name, programCount, size, cover, logo, hideLike}) => {
+  const width = 100/size;
   return (
-    <Col lg={size}>
-      <Post>
+    <Flex width={`${width}%`} minWidth={size === 1 ? '100%': '300px'} maxWidth={size === 1 ? '100%': '50%'}>
+      <University>
         <Card>
           <div className="card-container">
             <div className="card">
@@ -20,7 +22,11 @@ const UniversityCard = ({ name, programCount, size, cover, logo }) => {
                   backgroundImage: `url("${cover}")`,
                 }}
               >
-                <LikeButton />
+                {!hideLike && 
+                <div className="like-button">
+                  <LikeButton />
+                </div>
+}
                 <img src={logo} className="logo" />
               </div>
               <div className="card-body">
@@ -39,8 +45,8 @@ const UniversityCard = ({ name, programCount, size, cover, logo }) => {
             </div>
           </div>
         </Card>
-      </Post>
-    </Col>
+      </University>
+      </Flex>
   );
 };
 
@@ -50,6 +56,7 @@ UniversityCard.propTypes = {
   size: PropTypes.number,
   cover: PropTypes.string,
   logo: PropTypes.string,
+  hideLike: PropTypes.bool,
 };
 
 UniversityCard.defaultProps = {
@@ -58,6 +65,7 @@ UniversityCard.defaultProps = {
   size: 3,
   cover: null,
   logo: null,
+  hideLike: false
 };
 
 export default UniversityCard;

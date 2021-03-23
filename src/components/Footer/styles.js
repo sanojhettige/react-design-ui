@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const FooterContainer = styled.div`
   background: #f0f8fc;
   margin: -50px;
+  margin-top: 100px;
 
   .footer-block-one {
     display: flex;

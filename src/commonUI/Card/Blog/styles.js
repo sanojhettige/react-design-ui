@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Post = styled.div`
+width: 100%;
   .card-body {
     .title {
       font-weight: bold;

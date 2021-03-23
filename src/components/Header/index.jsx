@@ -44,24 +44,24 @@ const Header = ({ state }) => {
               to="/"
               onClick={onClick}
             >
-              TIPOS DE CURSOS <i className="icon-down-arrow drop-icon" />
+              TIPOS DE CURSOS {isActive}<i className="icon-down-arrow drop-icon" />
             </NavLink>
             <div
               ref={dropdownRef}
-              className={`submenu active ${isActive ? "active" : "inactive"}`}
+              className={`submenu ${isActive ? "active" : "inactive"}`}
             >
               <ul>
                 <li>
-                  <NavLink to="/">Design</NavLink>
+                  <NavLink to="/">Menu 1</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/">Development</NavLink>
+                  <NavLink to="/">Menu 2</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/">SEO</NavLink>
+                  <NavLink to="/">Menu 3</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/">Copywriting</NavLink>
+                  <NavLink to="/">Menu 4</NavLink>
                 </li>
               </ul>
             </div>

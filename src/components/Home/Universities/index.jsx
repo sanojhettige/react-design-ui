@@ -85,7 +85,7 @@ export default function Universities() {
         />
         <Row justifyContent="center">
           {UNIVERSITIES.map((university) => (
-            <UniversityCard key={university.id} size={3} {...university} />
+            <UniversityCard key={university.id} size={4} {...university} />
           ))}
         </Row>
       </Suspense>

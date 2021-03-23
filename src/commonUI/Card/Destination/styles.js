@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 
-export const Post = styled.div`
+export const Destination = styled.div`
+width: 100%;
+margin: 10px;
 .destination {
     position: relative;
   }

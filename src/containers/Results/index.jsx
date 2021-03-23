@@ -9,10 +9,10 @@ import { ResultContainer } from "./styles";
 
 const onFallback = "Loading...";
 
-export default function Home() {
+export default function Results() {
   return (
     <ResultContainer>
-      <Suspense key="home-page" fallback={onFallback}>
+      <Suspense key="results-page" fallback={onFallback}>
         <Header />
         <div className="results-page">
           <div className="form-container">

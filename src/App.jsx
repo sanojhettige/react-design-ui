@@ -5,6 +5,9 @@ import theme from "common-ui/Theme";
 import ErrorBoundary from "components/ErrorBoundary";
 import Home from "containers/Home";
 import Resultados from "containers/Results";
+import SearchResult from "containers/SearchResult";
+import Prices from "containers/Prices";
+import TableResult from "containers/SearchResult/TableResult";
 
 import "./app.css";
 import "./icons/icons.css";
@@ -23,7 +26,7 @@ function App() {
           <StyleReset />
         </Suspense>
         <ThemeProvider theme={theme}>
-          <Route exact={true} path="/" component={Home} />
+          <Route exact={true} path="/" component={TableResult} />
           <Route exact={true} path="/results" component={Resultados} />
         </ThemeProvider>
       </ErrorBoundary>

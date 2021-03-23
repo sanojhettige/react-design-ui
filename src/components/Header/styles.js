@@ -58,8 +58,7 @@ const Navigation = styled.header`
     align-items: center;
     width: 40%;
 
-    .menu,
-    .submenu {
+    .menu {
       list-style-type: none;
     }
 
@@ -185,11 +184,11 @@ const Navigation = styled.header`
   }
   .submenu {
     background: #ffffff;
-    border-radius: 8px;
+    // border-radius: 8px;
     position: absolute;
-    top: 40px;
-    right: 0;
-    width: 120px;
+    // top: 40px;
+    // right: 0;
+    width: auto;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     opacity: 0;
     visibility: hidden;
@@ -202,35 +201,32 @@ const Navigation = styled.header`
     visibility: visible;
     transform: translateY(0);
   }
+
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: block !important;
+  }
+  .submenu li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 10px 20px;
+    display: block;
+    text-align: left;
+
+    .icon {
+      color: #000000;
+    }
+  }
+
   .toggle {
     order: 1;
     font-size: 3em;
   }
-  /* Submenu up from mobile screens */
-  .submenu {
-    display: none;
-  }
-  .submenu-active .submenu {
-    display: block;
-  }
-  .has-submenu i {
-    font-size: 12px;
-  }
-  .has-submenu > a::after {
-    font-family: "Font Awesome 5 Free";
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 900;
-    content: "\f078";
-    color: white;
-    padding-left: 5px;
-  }
   .subitem a {
     padding: 10px 15px;
-  }
-  .submenu-active {
-    background-color: #111;
-    border-radius: 3px;
   }
 
   /* Tablet menu */
@@ -286,18 +282,8 @@ const Navigation = styled.header`
     .button {
       order: 2;
     }
-    .submenu-active .submenu {
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 68px;
-      background: #111;
-    }
     .toggle {
       display: none;
-    }
-    .submenu-active {
-      border-radius: 0;
     }
   }
 

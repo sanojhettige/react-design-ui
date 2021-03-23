@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
-export const Post = styled.div`
+export const University = styled.div`
+width: 100%;
   .card {
     width: 100%;
     .image {
@@ -14,6 +15,12 @@ export const Post = styled.div`
       background: #313131;
       border-radius: 3px 3px 0px 0px;
       max-height: 160px !important;
+    }
+
+    .like-button {
+      display: flex;
+    width: 100%;
+    justify-content: flex-end;
     }
 
     .logo {

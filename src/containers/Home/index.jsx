@@ -5,6 +5,7 @@ import Universities from "components/Home/Universities";
 import Destinations from "components/Home/Destinations";
 import Header from "components/Header";
 import Footer from "components/Footer";
+import Flex from 'common-ui/Flex';
 
 import { HomeContainer } from "./styles";
 
@@ -36,19 +37,19 @@ export default function Home() {
               </span>
             </p>
         </div>
-          <div className="form-container">
+          <Flex className="form-container">
             <Form />
-          </div>
+          </Flex>
         </div>
-        <div>
+        <Flex>
           <Blogs />
-        </div>
-        <div>
+        </Flex>
+        <Flex>
           <Universities />
-        </div>
-        <div>
+        </Flex>
+        <Flex>
           <Destinations />
-        </div>
+        </Flex>
 
         <Footer />
       </Suspense>
